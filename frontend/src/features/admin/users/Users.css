@@ -1,0 +1,11 @@
+.usersTable th, .usersTable td  {
+    border: 1.2px solid rgb(205, 205, 205);
+    text-align: center;
+    padding: 8px 8px;
+    text-transform: capitalize;
+}
+
+.usersTable td button:hover{
+    display: 'none';
+
+}

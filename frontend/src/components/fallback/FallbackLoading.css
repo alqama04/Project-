@@ -1,0 +1,22 @@
+.fallback{
+    background: #363636;
+    animation: fallbak 1.3s linear .2s infinite alternate-reverse;   
+}
+
+@keyframes fallbak {
+    0%{
+        background: #4e4e4e;
+    }
+    25%{
+        background: #474747;
+    }
+    50%{
+        background: #313030;
+    }
+    75%{
+        background: #272525;
+    }
+   100%{
+        background: #242222;
+    }
+}

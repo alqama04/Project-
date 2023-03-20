@@ -1,0 +1,36 @@
+.toggleBtn1,
+.toggleBtn{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed!important;
+    border-radius: 5px!important;
+    font-size: 1.6em!important;
+    left: -8px;
+    top: 10px;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 3px 3px 8px rgb(215, 215, 215);
+    background: #fff;
+}
+
+@media(max-width:991px) {
+    .toggleBtn1,
+    .toggleBtn{
+        opacity: 1;visibility: visible;
+    }
+    .toggleBtn1{
+        box-shadow: 3px 3px 8px rgb(215, 215, 215);
+        margin-left:  7.2em;
+
+    }
+    .dashNav {
+        transform: translateX(-1000px);
+        position: absolute;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dashNav.show{
+        transform: translateX(0px);
+    }
+}

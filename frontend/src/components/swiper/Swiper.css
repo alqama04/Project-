@@ -1,0 +1,138 @@
+/* global */
+.swiper-button-prev,
+.swiper-button-next {
+    background: #000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    right: 0;
+    color: #fff;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 15px;
+    font-weight: bolder;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+/* end global */
+
+.cardSwiper {
+    width: 300px;
+    height: 350px;
+}
+
+.cardSwiper .cardSwiperSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #f9f9f9;
+}
+
+/* -------Image Gallery------- */
+.imgeGallery {
+    width: 100%;
+    margin: 0 3px;
+}
+
+.thumbnails .imageGallerySlide,
+.imgeGallery .imageGallerySlide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: auto;
+}
+
+.thumbnails {
+    margin: 4px 0;
+}
+
+.thumbnails .imageGallerySlide {
+    object-fit: contain;
+    opacity: .6;
+    transition: all .2s ease-in-out;
+}
+
+.thumbnails .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+@media(min-width:991px) {
+    .thumbnails .imageGallerySlide img {
+        width: 100px !important;
+        box-shadow: 3px 2px 8px rgb(72, 72, 72);
+    }
+}
+
+/* mouseWheel slide */
+.swiper-pagination-bullet-active {
+    background: #AF0171;
+}
+
+.mouseWheel {
+    height: 100%;
+}
+
+.mouseWheel .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    height: max-content;
+    height: 100%;
+
+}
+
+.mouseWheel .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* imageCarousel */
+.imageCarousel {
+    height: 100%;
+    width: 100%;
+}
+
+.imageCarousel .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* freeMode */
+
+.freeMode {
+    width: 100%;
+    height: 100%;
+}
+
+.freeMode .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

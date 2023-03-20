@@ -1,0 +1,43 @@
+.inDemand {
+    margin-top: 20px;
+    transition: all .6s ease-in-out;
+}
+
+
+.inDemand:hover {
+    transform: translateY(-20px);
+}
+
+.testMonial {
+    border: 6px solid #FC7300;
+    border-top: none;
+    border-right: none;
+
+    animation: testMonialAnimate 3s ease-in-out .5s infinite alternate;
+
+}
+
+.testMonial:hover{
+    animation: none;
+}
+@keyframes testMonialAnimate{
+    0%{
+        border-color: #EB6440;
+    }
+    25%{
+        /* border-color: #F99417; */
+        border-color:rgb(126, 0, 0);
+    }
+    50%{
+        /* border-color: #FF8B13; */
+        border-color: #7A4069;
+    }
+    75%{
+        /* border-color: #FFB100; */
+        border-color: #FC7300;
+
+    }
+    100%{
+        border-color: orange;
+    }
+}

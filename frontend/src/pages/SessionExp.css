@@ -1,0 +1,8 @@
+.timeTrap{
+    animation: trap 3s ease-in-out infinite alternate;
+}
+@keyframes trap{
+   100%{
+       transform: rotate(3.146rad);
+   }   
+}
